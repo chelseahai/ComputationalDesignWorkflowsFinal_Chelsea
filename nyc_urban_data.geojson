@@ -1,0 +1,200 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Central Park",
+        "type": "park",
+        "area": 843,
+        "description": "Iconic urban park in Manhattan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9654, 40.7829]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Prospect Park",
+        "type": "park",
+        "area": 585,
+        "description": "Brooklyn's premier park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9690, 40.6602]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Metropolitan Museum of Art",
+        "type": "culture",
+        "visitors": 6500000,
+        "description": "World-renowned art museum"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9632, 40.7794]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Museum of Modern Art",
+        "type": "culture",
+        "visitors": 3000000,
+        "description": "Modern and contemporary art"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9776, 40.7614]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Brooklyn Museum",
+        "type": "culture",
+        "visitors": 500000,
+        "description": "Art and cultural history"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9631, 40.6712]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Grand Central Terminal",
+        "type": "transport",
+        "daily_riders": 750000,
+        "description": "Historic transportation hub"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9762, 40.7527]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Penn Station",
+        "type": "transport",
+        "daily_riders": 600000,
+        "description": "Major rail transportation center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9934, 40.7505]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Times Square",
+        "type": "transport",
+        "daily_riders": 300000,
+        "description": "Major subway interchange"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9855, 40.7580]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bryant Park",
+        "type": "park",
+        "area": 9.6,
+        "description": "Urban oasis in Midtown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9841, 40.7536]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Washington Square Park",
+        "type": "park",
+        "area": 9.75,
+        "description": "Historic Greenwich Village park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9973, 40.7308]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Guggenheim Museum",
+        "type": "culture",
+        "visitors": 1200000,
+        "description": "Modern art museum"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9590, 40.7829]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "American Museum of Natural History",
+        "type": "culture",
+        "visitors": 5000000,
+        "description": "Natural history and science"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9723, 40.7813]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Union Square",
+        "type": "transport",
+        "daily_riders": 200000,
+        "description": "Major subway station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9903, 40.7359]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Atlantic Terminal",
+        "type": "transport",
+        "daily_riders": 150000,
+        "description": "Brooklyn transportation hub"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9781, 40.6840]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Flushing Meadows Corona Park",
+        "type": "park",
+        "area": 897,
+        "description": "Queens' largest park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.8407, 40.7505]
+      }
+    }
+  ]
+}

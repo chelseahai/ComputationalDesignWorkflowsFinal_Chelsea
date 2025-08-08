@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computational Design Workflows - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>CDW Portfolio</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#2d-canvas" class="nav-link">2D Spatial Canvas</a></li>
+                <li class="nav-item"><a href="#3d-canvas" class="nav-link">3D Spatial Canvas</a></li>
+                <li class="nav-item"><a href="#temporal" class="nav-link">Temporal Structure</a></li>
+                <li class="nav-item"><a href="#relational" class="nav-link">Relational Structure</a></li>
+                <li class="nav-item"><a href="#geospatial" class="nav-link">Geospatial Structure</a></li>
+                <li class="nav-item"><a href="#engagement" class="nav-link">Engagement Component</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section">
+            <div class="container">
+                <div class="hero">
+                    <h1 class="hero-title">Computational Design Workflows</h1>
+                    <p class="hero-subtitle">Exploring digital design through computational methods and creative coding</p>
+                    <div class="hero-description">
+                        <p>This portfolio showcases a series of computational design exercises that explore various aspects of digital creation, from 2D and 3D spatial canvases to temporal, relational, and geospatial structures.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2D Spatial Canvas Section -->
+        <section id="2d-canvas" class="section">
+            <div class="container">
+                <div class="project-header">
+                    <h2>2D Spatial Canvas</h2>
+                </div>
+                <div class="project-content">
+                    <div class="project-demo">
+                        <div class="canvas-container">
+                            <h4>Kaleidoscope Drawing</h4>
+                            <div id="canvas2d-static"></div>
+                            <p class="canvas-description">Click and drag to draw mirrored patterns, or watch the automatic animation.</p>
+                            <div class="canvas-controls">
+                                <button id="regenerate2d">Clear</button>
+                                <button id="export2d">Segments</button>
+                            </div>
+                        </div>
+                        
+                        <div class="canvas-container">
+                            <h4>Noise Composition</h4>
+                            <div id="canvas2d-interactive"></div>
+                            <p class="canvas-description">Watch the generative patterns evolve automatically, or press R to reset, S to toggle speed, and D to change detail level.</p>
+                            <div class="canvas-controls">
+                                <button id="play2d">Reset</button>
+                                <button id="pause2d">Pause</button>
+                                <button id="reset2d">Detail</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3D Spatial Canvas Section -->
+        <section id="3d-canvas" class="section">
+            <div class="container">
+                <div class="project-header">
+                    <h2>3D Spatial Canvas</h2>
+                </div>
+                <div class="project-content">
+                    <div class="project-demo">
+                        <div class="canvas-container">
+                            <h4>Orbital Composition</h4>
+                            <div id="canvas3d"></div>
+                            <div class="canvas-controls">
+                                <button id="addCube">Add Geometry</button>
+                                <button id="addSphere">Add Elements</button>
+                                <button id="clear3d">Reset Scene</button>
+                            </div>
+                        </div>
+                        
+                        <div class="canvas-container">
+                            <h4>Solar System</h4>
+                            <div id="canvas3d-advanced"></div>
+                            <div class="canvas-controls">
+                                <button id="playSolar">Play</button>
+                                <button id="pauseSolar">Pause</button>
+                                <button id="resetSolar">Reset</button>
+                                <div class="slider-container">
+                                    <label for="speedSlider">Speed:</label>
+                                    <input type="range" id="speedSlider" min="0.1" max="3" step="0.1" value="1">
+                                    <span id="speedValue">1.0x</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Temporal Structure Section -->
+        <section id="temporal" class="section">
+            <div class="container">
+                <div class="project-header">
+                    <h2>Temporal Structure</h2>
+                </div>
+                <div class="project-content">
+                    <div class="project-demo">
+                        <div class="canvas-container">
+                                            <h4>Temporal Climate Heatmap</h4>
+                <div id="temporalVisualization"></div>
+                <p class="canvas-description">This temporal heatmap structure visualizes climate data as a color-coded grid where each cell represents a year and climate variable. Time flows horizontally from 1880 to 2023, with three climate indicators stacked vertically. Color intensity represents the magnitude of each measurement - darker reds show higher temperatures, deeper blues indicate higher CO2 levels and sea level rise. The structure reveals temporal patterns and trends that emerge when viewing climate data as a spatial-temporal matrix rather than traditional line graphs.</p>
+                <div class="canvas-controls">
+                    <button id="playTemporal">Animate</button>
+                    <button id="pauseTemporal">Pause</button>
+                    <button id="resetTemporal">Reset</button>
+                    <button id="addStream">Info</button>
+                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Relational Structure Section -->
+        <section id="relational" class="section">
+            <div class="container">
+                <div class="project-header">
+                    <h2>Relational Structure</h2>
+                </div>
+                <div class="project-content">
+                    <div class="project-demo">
+                        <div class="canvas-container">
+                                            <h4>Social Network Analysis</h4>
+                <div id="relationalVisualization"></div>
+                <p class="canvas-description">This relational structure visualizes connections between people, organizations, and topics in a creative technology ecosystem. Nodes represent individuals, institutions, and subject areas, while edges show relationships like collaboration, expertise, and partnerships. The network reveals how knowledge flows between different domains and how communities form around shared interests.</p>
+                                <div class="canvas-controls">
+                    <button id="resetZoom">Reset View</button>
+                    <button id="addNode">Add Node</button>
+                    <button id="clearNetwork">Clear</button>
+                    <button id="networkInfo">Info</button>
+                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Geospatial Structure Section -->
+        <section id="geospatial" class="section">
+            <div class="container">
+                <div class="project-header">
+                    <h2>Geospatial Structure</h2>
+                </div>
+                <div class="project-content">
+                    <div class="project-demo">
+                        <div class="canvas-container">
+                            <h4>Leading Pedestrian Intervals</h4>
+                            <div id="mapContainer" style="height: 500px;"></div>
+                            <p class="canvas-description">This geospatial visualization shows Leading Pedestrian Intervals (LPI) across New York City. LPIs give pedestrians a head start at traffic signals, improving safety and walkability. The map reveals patterns in pedestrian infrastructure investment and identifies areas where walkability enhancements have been prioritized.</p>
+                            <div class="canvas-controls">
+                                <button id="toggleRecent">Recent Installations</button>
+                                <button id="toggleOlder">Older Installations</button>
+                                <button id="toggleAll">Show All</button>
+                                <button id="resetMap">Reset View</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Engagement Component Section -->
+        <section id="engagement" class="section">
+            <div class="container">
+                <div class="project-header">
+                    <h2>Engagement Component</h2>
+                </div>
+                <div class="project-content">
+                    <div class="project-demo">
+                        <div class="canvas-container">
+                            <h4>Design Technology Poll</h4>
+                            <div id="pollContainer">
+                                <div id="pollQuestion">
+                                    <h3>What's your preferred approach to computational design?</h3>
+                                    <p class="poll-description">Help us understand how designers and developers approach creative technology workflows.</p>
+                                </div>
+                                
+                                <div id="pollOptions">
+                                    <div class="poll-option" data-value="generative">
+                                        <div class="option-icon">G</div>
+                                        <div class="option-content">
+                                            <h4>Generative Design</h4>
+                                            <p>Using algorithms to create variations and explore possibilities</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="poll-option" data-value="parametric">
+                                        <div class="option-icon">P</div>
+                                        <div class="option-content">
+                                            <h4>Parametric Modeling</h4>
+                                            <p>Building systems with adjustable parameters and relationships</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="poll-option" data-value="data-driven">
+                                        <div class="option-icon">D</div>
+                                        <div class="option-content">
+                                            <h4>Data-Driven Design</h4>
+                                            <p>Using real-world data to inform design decisions</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="poll-option" data-value="interactive">
+                                        <div class="option-icon">I</div>
+                                        <div class="option-content">
+                                            <h4>Interactive Systems</h4>
+                                            <p>Creating responsive experiences that adapt to user input</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div id="pollResults" style="display: none;">
+                                    <h3>Community Results</h3>
+                                    <div id="resultsChart"></div>
+                                    <div id="resultsStats"></div>
+                                </div>
+                                
+                                <div class="canvas-controls">
+                                    <button id="submitPoll">Submit Vote</button>
+                                    <button id="viewResults">View Results</button>
+                                    <button id="resetPoll">New Poll</button>
+                                    <div class="poll-status">Total Votes: <span id="totalVotes">0</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Computational Design Workflows Portfolio.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
+    
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-compat.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>

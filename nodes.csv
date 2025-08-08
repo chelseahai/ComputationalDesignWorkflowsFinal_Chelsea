@@ -1,0 +1,21 @@
+id,name,type,group,size
+1,Alice Chen,Person,Design,8
+2,Bob Rodriguez,Person,Technology,6
+3,Carol Johnson,Person,Research,7
+4,David Kim,Person,Design,5
+5,Emma Wilson,Person,Technology,9
+6,Fashion Institute,Organization,Education,12
+7,TechCorp,Organization,Technology,15
+8,Design Studio,Organization,Design,10
+9,Research Lab,Organization,Research,11
+10,Creative Agency,Organization,Design,13
+11,AI Development,Topic,Technology,8
+12,Sustainable Design,Topic,Design,9
+13,User Experience,Topic,Design,7
+14,Machine Learning,Topic,Technology,10
+15,Data Visualization,Topic,Research,8
+16,Frank Lee,Person,Technology,6
+17,Grace Martinez,Person,Design,7
+18,Henry Brown,Person,Research,8
+19,Ivy Chen,Person,Technology,5
+20,Jack Taylor,Person,Design,6
